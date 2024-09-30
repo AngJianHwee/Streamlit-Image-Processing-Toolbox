@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Streamlit Image Processing Toolbox Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Image Processing Toolbox</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1>Welcome to the Image Processing Toolbox</h1>
+                <p>As a deep learning researcher, I often found myself needing to apply several filters and
+                    transformations to images during the data preprocessing stage. To streamline this and make the
+                    process more intuitive, I created this toolbox using Streamlit. This site enables the quick
+                    adjustment and visualization of different image processing techniques, improving the efficiency and
+                    understanding of the effects each transformation can have.</p>
+            </div>
+        </div>
+
+        <!-- public/base64.png -->
+        <div class="row mt-5">
+            <div class="col-md-6 order-md-1 order-2">
+                <h3>Base64 Encoding</h3>
+                <p>Encode an image to base64 format and decode it back to its original form. Features:</p>
+                <ul>
+                    <li>Upload an image to encode</li>
+                    <li>Display the encoded string</li>
+                    <li>Decode the string to view the original image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img class="img-fluid" src="public/base64.png" alt="Base64 Encoding">
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img class="img-fluid" src="public/gaussian-blur.png" alt="Gaussian Blur">
+            </div>
+            <div class="col-md-6">
+                <h3>Gaussian Blur</h3>
+                <p>Interact and learn about the impact of varying parameters on the Gaussian blur operation. Features:
+                </p>
+                <ul>
+                    <li>Control kernel size through a slider</li>
+                    <li>Standard deviation alteration via another slider</li>
+                    <li>Interactive display of effect on image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+        </div>
+
+
+
+        <!-- public/dilation.png -->
+        <div class="row mt-5">
+            <div class="col-md-6 order-md-1 order-2">
+                <h3>Dilation</h3>
+                <p>Apply dilation to an image and observe the effects of varying the kernel size. Features:</p>
+                <ul>
+                    <li>Adjust kernel size with a slider</li>
+                    <li>Interactive display of the dilated image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img class="img-fluid" src="public/dilation.png" alt="Dilation">
+            </div>
+        </div>
+
+        <!-- public/erosion.png -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img class="img-fluid" src="public/erosion.png" alt="Erosion">
+            </div>
+            <div class="col-md-6">
+                <h3>Erosion</h3>
+                <p>Apply erosion to an image and observe the effects of varying the kernel size. Features:</p>
+                <ul>
+                    <li>Adjust kernel size with a slider</li>
+                    <li>Interactive display of the eroded image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+
+        </div>
+
+        <!-- public/gradient estimation.png -->
+        <div class="row mt-5">
+            <div class="col-md-6 order-md-1 order-2">
+                <h3>Gradient Estimation</h3>
+                <p>Estimate the gradient of an image using the Sobel operator. Features:</p>
+                <ul>
+                    <li>Adjust the kernel size with a slider</li>
+                    <li>Interactive display of the gradient image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img class="img-fluid" src="public/gradient estimation.png" alt="Gradient Estimation">
+            </div>
+        </div>
+
+        <!-- public/human-face-detection.png -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img class="img-fluid" src="public/human-face-detection.png" alt="Human Face Detection">
+            </div>
+            <div class="col-md-6">
+                <h3>Human Face Detection</h3>
+                <p>Use the Haar cascade classifier to detect human faces in an image. Features:</p>
+                <ul>
+                    <li>Upload an image to detect faces</li>
+                    <li>Interactive display of detected faces</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+        </div>
+
+        <!-- public/thresholding.png -->
+        <div class="row mt-5">
+            <div class="col-md-6 order-md-1 order-2">
+                <h3>Thresholding</h3>
+                <p>Apply thresholding to an image and observe the effects of varying the threshold value. Features:</p>
+                <ul>
+                    <li>Adjust the threshold value with a slider</li>
+                    <li>Interactive display of the thresholded image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <img class="img-fluid" src="public/thresholding.png" alt="Thresholding">
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5">
+            <div class="col-md-6 order-md-1 order-2">
+                <img class="img-fluid" src="public/canny-edge.png" alt="Canny Edge">
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <h3>Canny Edge Detection</h3>
+                <p>Experience edge detection using the Canny method in real-time. Features:</p>
+                <ul>
+                    <li>Upper threshold configurable with a slider</li>
+                    <li>Lower threshold adjustable in the same manner</li>
+                    <li>Real-time display of detected edges in the image</li>
+                </ul>
+                <a href="#">Try it out!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
