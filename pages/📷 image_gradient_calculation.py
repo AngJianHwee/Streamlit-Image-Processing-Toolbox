@@ -49,7 +49,7 @@ def get_gradient_image(img, kernel_size):
 st.set_page_config(layout="wide")
 
 # Set title and instructions
-st.title("Interactive Image Gradient Estimation")
+st.title("📷 Interactive Image Gradient Estimation")
 st.write("## Upload an image to compute its gradient.")
 
 initial_img = get_initial_image_as_bytes()

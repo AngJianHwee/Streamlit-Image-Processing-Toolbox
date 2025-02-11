@@ -22,7 +22,7 @@ def bytes_to_base64(image_bytes: bytes) -> str:
 st.set_page_config(layout="wide")
 
 # Set title and instructions
-st.title("Interactive Image Thresholding")
+st.title("📈 Interactive Image Thresholding")
 st.write("## Upload an image and adjust the threshold value.")
 
 initial_img = get_initial_image_as_bytes()

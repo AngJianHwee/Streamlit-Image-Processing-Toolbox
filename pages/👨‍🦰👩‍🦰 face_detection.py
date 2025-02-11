@@ -19,7 +19,7 @@ def detect_faces(image, scale_factor):
 st.set_page_config(layout="wide")
 
 # Set title and instructions
-st.title("Interactive Human Face Detection")
+st.title("👨‍🦰👩‍🦰 Interactive Human Face Detection")
 st.write("## Upload an image for face detection.")
 
 initial_img = get_initial_image_as_bytes("human_face")

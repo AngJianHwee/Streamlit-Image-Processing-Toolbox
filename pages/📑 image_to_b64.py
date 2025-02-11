@@ -15,7 +15,7 @@ def compress_image(image_pil, quality):
 st.set_page_config(layout="wide")
 
 # Set title and instructions
-st.title("Interactive Image to Base64 Conversion")
+st.title("📑 Interactive Image to Base64 Conversion")
 st.write("## Upload an image for compression and conversion to Base64.")
 
 initial_img = get_initial_image_as_bytes()

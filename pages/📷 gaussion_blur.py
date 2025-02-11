@@ -9,9 +9,7 @@ from _utils import pil_to_bytes, bytes_to_base64, get_initial_image_as_bytes, co
 
 # Set layout
 st.set_page_config(layout="wide")
-
-# Set title and instructions
-st.title("Interactive Gaussian Blur")
+st.title("📷 Interactive Gaussian Blur")
 st.write("## Upload an image and adjust the blur intensity.")
 
 
